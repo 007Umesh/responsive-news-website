@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Josefin+Sans&family=Onest&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Josefin+Sans&family=Onest&family=Poppins&family=Roboto&display=swap');
+:root {
+    --bgOrange: #e84949;
+    --font1: 'Baloo Bhai 2', sans-serif;
+    --font2: 'Roboto', sans-serif;
+}
+
+.max-wdith-1 {
+    max-width: 80vw;
+}
+
+.max-wdith-2 {
+    max-width: 60vw;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.btn {
+    padding: 0px 20px;
+    font-size: 16px;
+    padding-top: 2px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-family: var(--font1);
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.input-container {
+    padding: 0px 3px;
+    padding-top: 2px;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin: 0 13px;
+    font-family: var(--font1);
+    font-weight: bolder;
+}
+

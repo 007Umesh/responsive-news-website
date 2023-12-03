@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.navigation {
+  
+    height: 104px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font1);
+    color: black;
+    border-bottom: 1px solid black;
+   
+}
+
+body {
+    background-color: #879e82;
+}
+
+
+.nav-left {
+    font-size: 20px;
+    display: flex;
+}
+
+.nav-left span{
+    text-shadow:2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.nav-left ul {
+    display: flex;
+    align-items: center;
+    margin: 0 60px;
+    font-size: 18px;
+    color: #00202e;
+    
+}
+
+.nav-left ul li {
+    list-style: none;
+    margin: 0 14px;
+    font-family: var(--font1);
+    font-weight: 400;
+    font-weight: bolder;
+}
+
+.nav-left ul li:hover {
+    cursor: pointer;
+    border-radius: 8%;
+    border-bottom: 1px solid black;
+}
+
+
+.nav-left li a {
+    text-decoration: none;
+    color: black;
+}
+
+.category {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 70px;
+    text-align: center;
+    color: white;
+}
+
+.category ul {
+    display: flex;
+    align-items: center;
+    margin: 0 60px;
+    font-size: 2rem;
+    color: #00202e;
+    gap: 2rem;
+    text-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.category ul li {
+    list-style: none;
+    margin: 0 14px;
+    font-family: var(--font1);
+    font-weight: 400;
+    text-shadow:2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.category ul li:hover {
+    cursor: pointer;
+    border-radius: 8%;
+    border-bottom: 1px solid black;
+}
+
+.category h1 {
+    font-family: var(--font1);
+    font-size: 2rem;
+    color: #00202e;
+}
+
+.category #type{
+    text-shadow:2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.cardData {
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: auto;
+    grid-gap: 20px;
+    margin-top: 60px;
+}
+
+.card {
+    background-color: #b6c199;
+    padding: 11px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5%;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.273) ,inset -20px -20px 60px rgba(255, 255, 255, 0.114);
+}
+
+.card img {
+    width: 100%;
+    height: 45%;
+    border-radius: 5px;
+}
+
+.card h3 {
+    margin-top: 10px;
+    padding: 3px;
+    font-family: var(--font1);
+}
+
+.card p {
+    margin-top: 3px;
+    padding: 2px;
+    font-family: var(--font1);
+}
+
+
+
+
+
+
+.footer {
+    background-color: #828b6a;
+    padding: 3rem;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.list-wrapper ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    font-family: var(--font1);
+}
+
+
+.list-wrapper li {
+    font-size: 18px;
+    list-style: none;
+    font-weight: bolder;
+}
+
+.list-wrapper li a {
+    text-decoration: none;
+    color: black;
+}
+
+.list-wrapper li:hover {
+    cursor: pointer;
+    border-radius: 8%;
+    border-bottom: 1px solid black;
+}
+
+.icon-wrapper {
+    display: flex;
+    gap: 1rem;
+
+}
+
+.icon-wrapper a {
+
+    text-decoration: none;
+    color: black;
+
+}
+
+
+.fa.fa-twitter,
+.fa.fa-instagram,
+.fa.fa-envelope {
+    font-size: 24px;
+}
+
+.fa.fa-twitter:hover,
+.fa.fa-instagram:hover,
+.fa.fa-envelope:hover {
+    color: var(--bgOrange);
+    cursor: pointer;
+}
+
+.icon-wrapper a {
+    text-decoration: none;
+    color: black;
+}
+
+#icon2 {
+    font-size: 24px;
+}
+
+#icon2:hover {
+    color: var(--bgOrange);
+    cursor: pointer;
+}
+
+@media only screen and (max-width:1051px) {
+    .nav-left ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .category ul {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:838px) {
+    .navigation {
+        flex-direction: column;
+        border-bottom: none;
+    }
+}
+
+@media only screen and (max-width:430px) {
+    .input-container {
+        font-size: 12px;
+    }
+
+    .btn {
+        font-size: 12px;
+    }
+
+    .navigation {
+        border-bottom: none;
+    }
+
+    .nav-left ul a {
+        font-size: 0.6rem;
+    }
+
+    .card p {
+        display: none;
+    }
+    .list-wrapper ul{
+        font-size: 0.6rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+@media only screen and (max-width:280px) {
+    .input-container {
+        font-size: 10px;
+    }
+
+    .btn {
+        font-size: 10px;
+    }
+
+    .card {
+        align-items: center;
+        width: 180px;
+    }
+
+    .card p {
+        display: none;
+    }
+
+    .navigation {
+        border-bottom: none;
+    }
+}
